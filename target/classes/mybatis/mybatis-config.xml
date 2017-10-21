@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <settings>
+        <!-- 所有映射器中配置的缓存的全局开关-->
+        <setting name="cacheEnabled" value="false"/>
+        <!-- 延迟加载的全局开关 配置二级缓存时将此属性关闭-->
+        <setting name="lazyLoadingEnabled" value="false"/>
+        <!-- 关联对象加载 配置二级缓存时将此属性关闭-->
+        <setting name="aggressiveLazyLoading" value="false"/>
+        <!-- 是否允许单一语句返回多结果集-->
+        <setting name="multipleResultSetsEnabled" value="true"/>
+        <!-- 使用列标签代替列名-->
+        <setting name="useColumnLabel" value="true"/>
+        <!-- 允许 JDBC 支持自动生成主键，需要驱动兼容 -->
+        <setting name="useGeneratedKeys" value="false"/>
+        <!-- 指定 MyBatis 是否以及如何自动映射指定的列到字段或属性-->
+        <setting name="autoMappingBehavior" value="PARTIAL"/>
+        <!-- 配置默认的执行器-->
+        <setting name="defaultExecutorType" value="SIMPLE"/>
+        <!-- 设置超时时间，它决定驱动等待数据库响应的秒数-->
+        <setting name="defaultStatementTimeout" value="30"/>
+        <!-- 允许在嵌套语句中使用行分界 -->
+        <setting name="safeRowBoundsEnabled" value="false"/>
+        <!-- 是否开启自动驼峰命名规则映射 -->
+        <setting name="mapUnderscoreToCamelCase" value="false"/>
+        <!-- 利用本地缓存机制防止循环引用和加速重复嵌套查询 默认值为 SESSION，这种情况下会缓存一个会话中执行的所有查询-->
+        <setting name="localCacheScope" value="SESSION"/>
+        <!-- 当没有为参数提供特定的 JDBC 类型时，为空值指定 JDBC 类型 -->
+        <setting name="jdbcTypeForNull" value="OTHER"/>
+        <!-- 指定哪些对象的方法触发一次延迟加载-->
+        <setting name="lazyLoadTriggerMethods" value="equals,clone,hashCode,toString"/>
+    </settings>
+
+</configuration>
+
