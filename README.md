@@ -1,5 +1,5 @@
 ## CC-S 
-一个基于spring boot、druid、mybatis、mysql的后端基础
+一个基于spring boot、druid、mybatis、mysql的后端项目
 
 ## 使用前必读
  关于环境、使用等相关问题，请您阅读以下所有内容，请勿上来就直接问，好好珍惜别人的时间，也珍惜自己的时间，谢谢！
