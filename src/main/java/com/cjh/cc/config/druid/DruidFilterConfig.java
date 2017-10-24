@@ -16,7 +16,7 @@ import java.util.Map;
  * druid过滤器
  */
 @Configuration
-public class DruidFilterConfiguration {
+public class DruidFilterConfig {
 
     @Autowired
     private Environment env;

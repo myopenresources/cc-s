@@ -14,7 +14,7 @@ import java.util.Map;
  * druid servlet
  */
 @Configuration
-public class DruidServletConfiguration {
+public class DruidServletConfig {
 
     @Autowired
     private Environment env;

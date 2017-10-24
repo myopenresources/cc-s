@@ -2,6 +2,8 @@ package com.cjh.cc.system.user.controller;
 
 import com.cjh.cc.system.user.model.SystemUser;
 import com.cjh.cc.system.user.service.SystemUserService;
+import io.swagger.annotations.ApiImplicitParam;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -13,18 +15,16 @@ import java.util.List;
 import java.util.Map;
 
 @RestController
-@RequestMapping("/system/user")
+@RequestMapping("/v1/system/user")
 public class SystemUserController {
 
     @Autowired
     private SystemUserService userService;
 
+    @ApiOperation(value="保存用户", notes="根据前端传过来的用户参数保存用户")
     @RequestMapping(value = "/saveUser", method = RequestMethod.GET)
-    public Object saveUser()throws Exception {
-        SystemUser user =new SystemUser();
-        user.setId("122");
-        user.setUserName("张三");
-        return this.userService.saveUser(user);
+    public Object saveUser(SystemUser systemUser)throws Exception {
+        return this.userService.saveUser(systemUser);
     }
 
     @RequestMapping(value = "/findList", method = RequestMethod.POST)
