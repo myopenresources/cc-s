@@ -11,6 +11,7 @@ https://github.com/332557712/cc
 1. 搭建环境，分别加入spring boot、druid、mybatis等<br/>
 2. 分别配置druid、mybatis、全局异常处理<br/>
 3. 配置跨域<br/>
+4. 添加swagger2<br/>
 
 
 ## 环境
