@@ -11,12 +11,24 @@ https://github.com/332557712/cc
 1. 搭建环境，分别加入spring boot、druid、mybatis等<br/>
 2. 分别配置druid、mybatis、全局异常处理<br/>
 3. 配置跨域<br/>
-4. 添加swagger2<br/>
+4. 添加ehcache<br/>
 
 
-## 环境
+## 开发环境
 1. 开发工具IntelliJ IDEA 2017
 2. jdk版本1.7
+
+## 项目地址 
+1. 后台地址<br/>
+http://localhost:8080/cc/+接口名称
+
+2. swagger ui地址<br/>
+http://localhost:8080/cc/swagger-ui.html
+
+3. druid地址<br/>
+http://localhost:8080/cc/druid/login.html
+
+
 
 
 ## 特别声明

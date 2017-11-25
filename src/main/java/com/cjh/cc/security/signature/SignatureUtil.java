@@ -1,10 +1,9 @@
 package com.cjh.cc.security.signature;
 
-import com.cjh.cc.common.util.MD5Util;
+import com.cjh.cc.common.util.DigestUtil;
 import com.cjh.cc.security.Constant;
 
 import java.util.Iterator;
-import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
 import java.util.SortedMap;
@@ -36,7 +35,7 @@ public class SignatureUtil {
 			}
 		}
 		sb.append("key=" + Constant.SIGNATURE_KEY);
-		String sign = MD5Util.MD5(sb.toString()).toUpperCase();
+		String sign = DigestUtil.MD5(sb.toString()).toUpperCase();
 		return sign;
 	}
 
