@@ -5,7 +5,7 @@
  关于环境、使用等相关问题，请您阅读以下所有内容，请勿上来就直接问，好好珍惜别人的时间，也珍惜自己的时间，谢谢！
 
 ## 前端界面
-https://github.com/332557712/cc
+https://github.com/myopenresources/cc
 
 ## 更新记录
 1. 搭建环境，分别加入spring boot、druid、mybatis等<br/>
